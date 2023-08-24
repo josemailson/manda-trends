@@ -9,30 +9,38 @@
         margin: 0;
         padding: 0;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         min-height: 100vh;
         background-color: #f0f0f0;
       }
+
       .rectangle {
-        width: 640px;
-        height: 1014px;
+        width: 100%;
+        max-width: 640px;
+        height: 960px;
         background-color: #f2f2f2;
         position: relative;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        min-height: 100vh;
       }
       .inner-rectangle {
-        width: 600px;
+        width: 100%;
+        max-width: 600px;
         height: 950px;
         background-color: white;
         position: absolute;
         top: 0;
         left: 50%;
         transform: translateX(-50%);
+        margin: 0 auto;
       }
       .gradient-strip {
-        width: 600px;
+        width: 100%;
         height: 140px;
         background: linear-gradient(to right, #ea4a30, #e82358);
         position: absolute;
@@ -257,7 +265,7 @@
       .footer-rectangle{
         position: absolute;
         bottom: 0;
-        width: 601px;
+        width: 100%;
         height: 81px;
         background-color: #fb4b01;
         display: flex;
@@ -266,16 +274,14 @@
       }
 
       .assinatura {
-        position: absolute;
         width: 260px;
         height: 48px;
         background-image: url('images/assinatura.png');
         background-size: cover;
       }
 
-      .footer{
-        position: absolute;
-        bottom: 0;
+      footer{
+        width: 100%;
         height: 23px;
         display: flex;
         flex-direction: column;
@@ -284,7 +290,7 @@
         font-size: 12px;
         font-family: Arial, sans-serif;
         color: #656969;
-        padding-bottom: 18px;
+        padding: 10px;
       }
 
       .p-2{
@@ -294,6 +300,103 @@
       .p-2 a {
         color: inherit;
     }
+
+    @media (max-width: 768px) {
+
+        body{
+          height: 1250px;
+        }
+
+        .rectangle {
+          flex-direction: column;
+          height: 1200px;
+        }
+        
+        .inner-rectangle {
+          width: 95%;
+          height: 100%;
+        }
+
+        .mulher {
+          display: none;
+        }
+
+        .layer-18 {
+          width: 80%;
+        }
+
+        .h1-1 {
+          font-size: 16px;
+        }
+
+        .news {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        h2{
+          font-size: 16px;
+        }
+
+        .space {
+          width: 100%;
+          height: 14px;
+        }
+
+        footer{
+          font-size: 10px;
+        }
+      }
+
+      @media (max-width: 450px) {
+
+          .manda-bem{
+            width: 155px;
+            height: 55px;
+            left: 20px;
+          }
+  
+          .layer-18 {
+            width: 80%;
+          }
+  
+          .h1-1 {
+            font-size: 16px;
+            left: 0;
+          }
+
+          .p-1{
+            left: 20px;
+          }
+
+          .fonte-1 {
+            left: 20px;
+          }
+
+          .gradient-rectangle-2 {
+            left: 20px;
+          }
+  
+          .news {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+          }
+  
+          h2{
+            font-size: 14px;
+          }
+  
+          .space {
+            width: 100%;
+            height: 14px;
+          }
+  
+          footer{
+            font-size: 8px;
+          }
+      }
 
     </style>
 </head>
@@ -334,10 +437,10 @@
         <div class="assinatura"></div>
       </div>
     </div>
-    <div class="footer">
-      <p class="p-2">Copyright ® Mandarin. Todos os direitos reservados.</p>
-      <p class="p-2"> Caso não deseje mais receber nossos e-mails, por favor <a href="">clique aqui</a></p>
-    </div>
   </div>
+  <footer>
+    <p class="p-2">Copyright ® Mandarin. Todos os direitos reservados.</p>
+    <p class="p-2"> Caso não deseje mais receber nossos e-mails, por favor <a href="">clique aqui</a></p>
+  </footer>
 </body>
 </html>
