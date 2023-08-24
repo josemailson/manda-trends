@@ -1,109 +1,328 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manda Trends</title>
     <style>
-        body {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          min-height: 100vh;
-          background-color: #f0f0f0;
-        }
-      
-        .rectangle {
-          width: 640px;
-          height: 1014px;
-          background-color: #f2f2f2;
-          position: relative;
-        }
-        
-        .inner-rectangle {
-          width: 600px;
-          height: 950px;
-          background-color: white;
-          position: absolute;
-          top: 0;
-          left: 50%;
-          transform: translateX(-50%);
-        }
-        
-        .gradient-strip {
-          width: 600px;
-          height: 140px;
-          background: linear-gradient(to right, #ea4a30, #e82358);
-          position: absolute;
-          top: 20px;
-          left: 0;
-        }
-        
-        .lines {
-          position: absolute;
-          bottom: 0; /* Ajuste para posicionar na parte inferior */
-          left: 0;
-          width: 100px; /* Ajuste a largura conforme necessário */
-          height: 100px; /* Ajuste a altura conforme necessário */
-          background-image: url('images/Vector Smart Object 2.png');
-          background-size: cover;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f0f0f0;
+      }
+      .rectangle {
+        width: 640px;
+        height: 1014px;
+        background-color: #f2f2f2;
+        position: relative;
+        display: flex;
+        justify-content: center;
+      }
+      .inner-rectangle {
+        width: 600px;
+        height: 950px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .gradient-strip {
+        width: 600px;
+        height: 140px;
+        background: linear-gradient(to right, #ea4a30, #e82358);
+        position: absolute;
+        top: 20px;
+        left: 0;
+      }
+      .lines {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 100px;
+        background-image: url('images/Vector Smart Object 2.png');
+        background-size: cover;
+      }
+      .manda-bem {
+        position: absolute;
+        bottom: 34px;
+        left: 40px;
+        width: 197px;
+        height: 70px;
+        background-image: url('images/Vector Smart Object.png');
+        background-size: cover;
+      }
+      .bolinhas {
+        position: absolute;
+        bottom: 0px;
+        left: 230px;
+        width: 40px;
+        height: 30px;
+        background-image: url('images/bolinhas copy.png');
+        background-size: cover;
+      }
+      .arrows {
+        position: absolute;
+        bottom: 100px;
+        left: 285px;
+        width: 48px;
+        height: 20px;
+        background-image: url('images/Vector Smart Object 3.png');
+        background-size: cover;
+      }
+      .mulher {
+        position: absolute;
+        bottom: -30px;
+        left: 287px;
+        width: 135px;
+        height: 120px;
+        background-image: url('images/Gradient Map 1 copy.png');
+        background-size: cover;
+      }
+      .triangle {
+        position: absolute;
+        right: 20px;
+        top: 5px;
+        width: 24px;
+        height: 22px;
+        background-image: url('images/triangle.png');
+        background-size: cover;
+      }
+      .nrf2020 {
+        position: absolute;
+        right: 38px;
+        top: 30px;
+        width: 136px;
+        height: 71px;
+        background-image: url('images/NRF2020,  Kobe Bryant e  WhatsApp Payment  edição 06.png');
+        background-size: cover;
+      }
+      .zigzag {
+        position: absolute;
+        right: 38px;
+        bottom: 20px;
+        width: 78px;
+        height: 8px;
+        background-image: url('images/zigzag.png');
+        background-size: cover;
+      }
+      .layer-18 {
+        position: absolute;
+        top: 170px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 528px;
+        height: 234px;
+        background-image: url('images/Layer 18.png');
+        background-size: cover;
+      }
+      .h1-1 {
+        position: absolute;
+        top: 412px;
+        left: 37px;
+        margin: auto;
+        text-align: center;
+        font-size: 22px;
+        font-weight: bolder;
+        font-family: Arial, sans-serif;
+        color: #000;
+      }
 
-        .manda-bem {
+      .p-1{
+        position: absolute;
+        top: 447px;
+        left: 37px;
+        margin: auto;
+        font-size: 13px;
+        font-family: Arial, sans-serif;
+        color: #000;
+        max-width: 526px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+      }
+      .txt-copy {
+        position: absolute;
+        top: 490px;
+        left: 37px;
+        margin: auto;
+        width: 100px;
+        height: 8px;
+        background-image: url('images/txt copy.png');
+      }
+      .gradient-rectangle-2 {
           position: absolute;
-          bottom: 34px; /* Ajuste para posicionar na parte inferior */
-          left: 40px;
-          width: 197px; /* Ajuste a largura conforme necessário */
-          height: 70px; /* Ajuste a altura conforme necessário */
-          background-image: url('images/Vector Smart Object.png');
-          background-size: cover;
-        }
+          top: 506px;
+          left: 37px;
+          width: 249px;
+          height: 4px;
+          background: linear-gradient(to right, #e52358, #695ba3);
+      }
+      .news {
+        position: absolute;
+        top: calc(490px + 49px);
+        left: 50%;
+        width: 526px;
+        height: 281px;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+      }
+      .left {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .layer-19 {
+        width: 251px;
+        height: 191px;
+        background-image: url('images/Layer 19.png');
+        background-size: cover;
+      }
+      h2{
+        font-size: 18px;
+        font-weight: bolder;
+        font-family: Arial, sans-serif;
+        color: #000;
+        max-width: 251px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+      }
+      .txt-copy-2 {
+        width: 84px;
+        height: 10px;
+        background-image: url('images/txt copy 2.png');
+        background-size: cover;
+        margin-bottom: 12px;
+      }
+      .gradient-rectangle-3 {
+          width: 155px;
+          height: 4px;
+          background: linear-gradient(to right, #76c6cf, #675fa6);
+      }
+      .layer-22 {
+        width: 251px;
+        height: 191px;
+        background-image: url('images/Layer 22.png');
+        background-size: cover;
+      }
+      .txt-copy-3 {
+        width: 77px;
+        height: 8px;
+        background-image: url('images/txt copy 3.png');
+        background-size: cover;
+        margin-bottom: 12px;
+      }
+      .gradient-rectangle-4 {
+          width: 155px;
+          height: 4px;
+          background: linear-gradient(to right, #77c8d0, #3ab38a);
+      }
 
-        .bolinhas {
-          position: absolute;
-          bottom: 0px; /* Ajuste para posicionar na parte inferior */
-          left: 230px;
-          width: 40px; /* Ajuste a largura conforme necessário */
-          height: 30px; /* Ajuste a altura conforme necessário */
-          background-image: url('images/bolinhas copy.png');
-          background-size: cover;
-        }
+      .space{
+        width: 14px;
+      }
 
-        .arrows {
-          position: absolute;
-          bottom: 100px; /* Ajuste para posicionar na parte inferior */
-          left: 285px;
-          width: 48px; /* Ajuste a largura conforme necessário */
-          height: 20px; /* Ajuste a altura conforme necessário */
-          background-image: url('images/Vector Smart Object 3.png');
-          background-size: cover;
-        }
+      .footer-rectangle{
+        position: absolute;
+        bottom: 0;
+        width: 601px;
+        height: 81px;
+        background-color: #fb4b01;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 
-        .mulher {
-          position: absolute;
-          bottom: -30px; /* Ajuste para posicionar na parte inferior */
-          left: 287px;
-          width: 135px; /* Ajuste a largura conforme necessário */
-          height: 120px; /* Ajuste a altura conforme necessário */
-          background-image: url('images/Gradient Map 1 copy.png');
-          background-size: cover;
-        }
+      .assinatura {
+        position: absolute;
+        width: 260px;
+        height: 48px;
+        background-image: url('images/assinatura.png');
+        background-size: cover;
+      }
 
-      </style>
+      .footer{
+        position: absolute;
+        bottom: 0;
+        height: 23px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+        color: #656969;
+        padding-bottom: 18px;
+      }
+
+      .p-2{
+        margin: 0;
+      }
+
+      .p-2 a {
+        color: inherit;
+    }
+
+    </style>
 </head>
 <body>
-    <div class="rectangle">
-      <div class="inner-rectangle">
-        <div class="gradient-strip">
-          <div class="lines"></div>
-          <div class="manda-bem"></div>
-          <div class="bolinhas"></div>
-          <div class="arrows"></div>
-          <div class="mulher"></div>
-        </div>
+  <div class="rectangle">
+    <div class="inner-rectangle">
+      <div class="gradient-strip">
+        <div class="lines"></div>
+        <div class="manda-bem"></div>
+        <div class="bolinhas"></div>
+        <div class="arrows"></div>
+        <div class="mulher"></div>
+        <div class="triangle"></div>
+        <div class="nrf2020"></div>
+        <div class="zigzag"></div>
+      </div>
+      <div class="layer-18"></div>
+      <h1 class="h1-1">NRF 2020: conheça os top 5 assuntos do evento.</h1>
+      <p class="p-1">O maior evento sobre varejo do mundo mostrando as tendências, oportunidades e inovações para o setor.</p>
+      <div class="txt-copy"></div>
+      <div class="gradient-rectangle-2"></div>
+      <div class="news">
+          <div class="left">
+            <div class="layer-19"></div>
+            <h2>Petição para colocar Kobe Bryant no logo da NBA.</h2>
+            <div class="txt-copy-2"></div>
+            <div class="gradient-rectangle-3"></div>
+          </div>
+          <div class="space"></div>
+          <div class="right">
+            <div class="layer-22"></div>
+            <h2>WhatsApp terá função de pagamentos em 2020.</h2>
+            <div class="txt-copy-3"></div>
+            <div class="gradient-rectangle-4"></div>
+          </div>
+      </div>
+      <div class="footer-rectangle">
+        <div class="assinatura"></div>
       </div>
     </div>
+    <div class="footer">
+      <p class="p-2">Copyright Mandarin. Todos os direitos reservados.</p>
+      <p class="p-2"> Caso não deseje mais receber nossos e-mails, por favor <a href="">clique aqui</a></p>
+    </div>
+  </div>
 </body>
 </html>
